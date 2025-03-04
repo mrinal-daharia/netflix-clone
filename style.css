@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fustat:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Liter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    position:static;
+    /* background: linear-gradient(to bottom, #0f172a, #000000); */
+    /* z-index: -1; */
+}
+main .bgimg
+{
+    background-image: url(assets/netflix\ bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.625);
+    background-blend-mode: darken;
+    position:static;
+    z-index: -1;
+}
+.navbar
+{
+    width: 80vw;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left:10vw;
+    justify-content:space-between;
+}
+.logo
+{
+    filter: invert(18%) sepia(92%) saturate(7491%) hue-rotate(357deg) brightness(93%) contrast(119%);
+    width: 150px;
+}
+form
+{
+    padding: 5px 15px;
+    /* border: 3px solid snow; */
+    border-radius: 8px;
+}
+form label 
+{
+    filter: brightness(0) invert(1);
+}
+form select
+{
+    background: transparent;
+    color: snow;
+    border: none;
+    font-weight: bold;
+}
+.language_border
+{
+    border: 2px solid gray;
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: inline;
+    margin: 10px;
+}
+input
+{
+    background: rgb(222, 0, 0);
+    border: none;
+    color: snow;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.heading
+{
+    position: relative;
+    bottom:60vh;
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    color: snow;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    width:40vw;
+}
+.paragraph
+{
+    position: relative;
+    bottom: 60vh;
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: snow;
+    line-height: 8vh;
+}
+.paragraph form .pfont
+{
+    font-weight: lighter;
+    font-size:15px;
+}
+/* Curve Container */
+.curve-container {
+    position: absolute;
+    bottom: -2vh; /* Ensures it's exactly at the bottom */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 20vh;
+}
+
+/* Ensure the curve covers the full width */
+.curve-container svg {
+    width: 100%;
+    height:auto;
+    display: block;
+}
+.paragraph {
+    position: relative;
+    z-index: 2;
+}
+input[type="email"] {
+    background: rgb(29, 29, 29);  /* Set a visible background */
+    /* color: snow;   */
+    font-size: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid gray;
+    transform: scale(150%);
+}
+#email
+{
+    width: 220px;
+}
+#get-started
+{
+    width: 150px;
+}
+.make-inline
+{
+    display: inline;
+    margin: 47px;
+}
+.scale-button
+{
+    transform: scale(1.5);
+}
+/* Gradient for the Red Curve Line */
+.gradient-stop1 {
+    stop-color: #ff0066;
+    stop-opacity: 0;
+}
+
+.gradient-stop2 {
+    stop-color: #ff0019;
+    stop-opacity: 1;
+}
+
+.gradient-stop3 {
+    stop-color: #ff0066;
+    stop-opacity: 0;
+}
+
+/* Gradient for the Background Below the Line */
+.bg-stop1 {
+    stop-color: #0f2a1e;
+    stop-opacity: 1;
+}
+
+.bg-stop2 {
+    stop-color: #000;
+    stop-opacity: 1;
+}
+
+/* Red Curve Line */
+.red-curve {
+    stroke: url(#curveGradient);
+    stroke-width: 10;
+    fill: transparent;
+    stroke-linecap: round;
+}
+
+
+/* Blue Gradient Wrapper */
+.blue-gradient-wrapper {
+    position: absolute;
+    bottom: -62%;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center button horizontally */
+    align-items: center; /* Center button vertically */
+    z-index: 5; 
+}
+
+/* Blue Curved Background */
+.blue-curved-background {
+    position: absolute;
+    top: 0; /* Make sure it aligns with the red curve */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000, #000);
+    clip-path: path("M0,100 Q50%,0 100%,100 L100%,100% L0,100% Z");
+}
+button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    width: 210px;  /* Ensure button wraps card */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensure it is above other elements */
+    position: relative; /* Ensures it stays above the background */
+}
+.lists
+{
+    /* width: 100px; */
+    /* padding: 50px; */
+    /* border: 2px solid snow; */
+    /* z-index: 1; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.cards
+{
+    width: 75vw;
+}
+.card
+{ 
+    width: 197px;
+    height: 276px;
+    border-radius: 10px;
+    background-size: cover;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(0.95);
+}
+button:hover .card {
+    transform: scale(1); /* Slight hover effect */
+}
+ul
+{
+    display: flex;
+    gap: 25px;
+    overflow: scroll hidden;
+    /* width: 80vw; */
+}
+.card-lists li img
+{
+    border-radius: 10px;
+}
+.next-scroll
+{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+.previous-scroll
+{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+.left-scroll
+{
+    background-color: #1a1a1a;
+    width: 2vw;
+    height: 20vh;
+    display: flex;
+    align-self: center;
+    border-radius: 8px;
+}
+.right-scroll
+{
+    background-color: #1a1a1a;
+    width: 2vw;
+    height: 20vh;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+}
+.left-scroll:hover
+{
+
+    filter: brightness(2);
+}
+.right-scroll:hover
+{
+    
+    filter: brightness(2);
+}
+
+.sub-heading
+{
+    color: snow;
+    z-index: 0;
+    position: absolute;
+    top : 10px;
+    left: 135px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card span
+{
+    color: black;
+    font-size: 7.5rem;
+    position: absolute;
+    left: -2rem;
+    top: 20vh;
+    font-weight: 700;
+    font-family: Times, 'Times New Roman', serif;
+    -webkit-text-stroke: 0.13rem rgb(255, 255, 255);
+}
+.reason-block
+{
+    width: 100;
+    height: 70vh;
+    background-color: black;
+    align-content: center;
+    position:relative;
+    padding: 150px 0px 0px 0px;
+}
+.reason-lists
+{
+    display: flex;
+    /* width: 80vw; */
+    /* height: 50vh;  */
+    background-color: black;    
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+}
+.reason-card
+{
+    width: 300px;
+    height: 300px;
+    background:linear-gradient(150deg,#1a2044, #301626);
+    border-radius: 10px;
+    margin: 8px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+.reason-block .reason-heading
+{
+    color: snow;
+    position: absolute;
+    top: 15vh;
+    left: 135px;
+    z-index: 20;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seri
+}
+.reason-card .inside-card-heading
+{
+    color: snow;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.reason-card .reason-paragraph
+{
+    color: rgba(255, 250, 250, 0.737);
+}
+.reason-card img
+{
+    position: absolute;
+    width: 70px;
+    bottom: 15px;
+    right: 15px;
+}
+.question-block
+{
+    display: grid;
+    background-color: black;
+    color: snow;    
+    padding: 50px 135px;
+    gap: 10px;
+}
+.question-block-heading
+{
+    margin-bottom: 10px;
+}
+.question-block .frequently-asked-question
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    padding-bottom: 0px;
+    background-color: #2d2d2d;   
+}
+.frequently-asked-question
+{
+    flex-direction: column;
+    width: 80vw;
+}
+.frequently-asked-question summary
+{
+    font-size: 1.5rem;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.frequently-asked-question p
+{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+footer{
+    width: 100;
+    height: 100%;
+    background-color: black;
+    color: snow;
+}
+.membership-form
+{
+    /* color: snow; */
+    width: 60vw;
+    /* background-color: red; */
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+.membership-form-para
+{
+    padding: 10px;
+}
+#email1
+{
+    width: 400px;
+}
+.gap
+{
+    margin: 0px 17px;
+}
+.grid
+{
+    display: grid;
+    /* grid-template-rows: auto auto auto auto auto; */
+    grid-template-rows: 30px 30px 30px 30px;
+    grid-template-columns: 291px 291px 291px 291px;
+    padding: 50px 0px 0px 135px; 
+    left: 130px;
+    /* width: 60vw; */
+    /* background-color: red; */
+}
+.grid-row-span
+{
+    /* grid-column: 1/5; */
+    padding-top: 70px;
+    padding-left: 135px;
+    color: rgba(255, 250, 250, 0.607);
+}
+.grid-row-span a{
+    color: rgba(255, 250, 250, 0.607);
+}
+.grid p a
+{
+    color: rgba(255, 250, 250, 0.607);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.875rem;
+}
