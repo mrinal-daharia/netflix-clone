@@ -471,3 +471,78 @@ footer{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0.875rem;
 }
+
+
+@media only screen and (max-width: 480px)
+{
+    *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+main{
+    /* position:static; */
+    overflow: hidden;
+}
+main .bgimg
+{
+    background-image: url(assets/netflix\ bg.jpg);
+    background-size:auto;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.625);
+    background-blend-mode: darken;
+    top:  -200px;
+    z-index: -1;
+}
+.navbar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    left: 0;
+}
+.logo img {
+    width: 100px;
+    margin: 10px;
+}
+.language_border
+{
+    border: 2px solid gray;
+    padding: 5px 7px;
+    border-radius: 5px;     
+}
+#sign_in
+{
+    height: 35px;
+    padding: 0px 20px;
+    font-size: 12px;
+}
+form
+{
+    padding: 5px 15px;
+    /* border: 3px solid snow; */
+    border-radius: 8px;
+}
+form label 
+{
+    filter: brightness(0) invert(1);
+}
+form select
+{
+    background: transparent;
+    color: snow;
+    border: none;
+    font-weight: bold;
+}
+.language_border #language
+{
+    font-size: 0px;
+}
+} 
