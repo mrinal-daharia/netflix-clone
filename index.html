@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Netflix India-Clone</title>
+    <title>Document</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
                 <img src="assets/logo.svg" alt="Netflix_logo">
             </div>
+            
             <div class="language">
-                <form action="" method="post" id=" sign_in_form">
-                    <div class="language_border">
+                <form action="" method="post" id="sign_in_form">
+                    <div class="make-inline language_border">
                         <label for="language"><img src="assets/lang.svg" alt="language"></label>
                         <select name="language" id="language">
                             <option value="english">English</option>
                             <option value="hindi">Hindi</option>
                         </select>
                     </div>
-                    <label for="sign_in"></label>
-                    <input type="submit" name="sign_in" id="sign_in" value="Sign in">
+                    <div class="make-inline">
+                        <label for="sign_in"></label>
+                        <input type="submit" name="sign_in" id="sign_in" value="Sign in">
+                    </div>
                 </form>
             </div>
         </nav>
     </header>
     <main>
-        <div class="bgimg"></div>
         <div class="heading">
             <h1>Unlimited movies, TV shows and more</h1>
         </div>
         <div class="paragraph">
             <form action="" method="post" id="form1">
                 <div>
-                    <p>Starts at ₹149. Cancel at any time.</p>
+                    <p class="p-heading">Starts at ₹149. Cancel at any time.</p>
                 </div>
                 <div class="pfont">
                     <p>
                         Ready to watch? Enter your email to create or restart your membership.
                     </p>
                 </div>
-                <div class="make-inline email">
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                <div class="inline email">
+                    <input type="email" name="email" id="email" placeholder="Email address">
                 </div>
-                <div class="make-inline">
+                <div class="inline">
                     <!-- Submit Button Added -->
                     <input type="submit" value="Get Started" id="get-started" class="scale-button">
                 </div>
@@ -66,103 +66,104 @@
                         <stop offset="100%" class="bg-stop2" />
                     </linearGradient>
                 </defs>
-                <path d="M0,150 Q960,80 1920,150" class="red-curve" />
-                <path d="M0,150 Q960,80 1920,150 L1920,500 L0,500 Z" class="background-shape" />
+                <path d="M0,150 Q960,50 1920,150" class="red-curve" />
+                <path d="M0,150 Q960,50 1920,150 L1920,500 L0,500 Z" class="background-shape" />
             </svg>
         </div>  
-        <div class="blue-gradient-wrapper">
-            <div class="blue-curved-background"></div>
-            <div class="sub-heading"><h2>Trending Now</h2></div>
+    </main>
+    <footer>
+        <div class="trending-now">
+             <div class="sub-heading"><h2>Trending Now</h2></div>
             <div class="lists">
                 <div class="previous-scroll">
                     <button type="submit" title="left-scroll" class="left-scroll">
                         <img src="assets/previous.svg" alt="previous">
                     </button>
                 </div>
-                    <div class="cards">
-                        <ul class="card-lists">
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img1.webp" alt="img1">
-                                        <span>1</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img2.webp" alt="img2">
-                                        <span>2</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img3.webp" alt="img3">
-                                        <span>3</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img4.webp" alt="img4">
-                                        <span>4</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img5.webp" alt="img5">
-                                        <span>5</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img6.webp" alt="img6">
-                                        <span>6</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img7.webp" alt="img7">
-                                        <span>7</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img8.webp" alt="img8">
-                                        <span>8</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img9.webp" alt="img9">
-                                        <span>9</span>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="submit" title="card">
-                                    <div class="card">
-                                        <img src="assets/cardimg/img10.webp" alt="img10">
-                                        <span>10</span>
-                                    </div>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="cards">
+                    <ul class="card-list">
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img1.webp" alt="img1">
+                                    <span>1</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img2.webp" alt="img2">
+                                    <span>2</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img3.webp" alt="img3">
+                                    <span>3</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img4.webp" alt="img4">
+                                    <span>4</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img5.webp" alt="img5">
+                                    <span>5</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img6.webp" alt="img6">
+                                    <span>6</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img7.webp" alt="img7">
+                                    <span>7</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img8.webp" alt="img8">
+                                    <span>8</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img9.webp" alt="img9">
+                                    <span>9</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" title="card">
+                                <div class="card">
+                                    <img src="assets/cardimg/img10.webp" alt="img10">
+                                    <span>10</span>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
                 <div class="next-scroll">
                     <button type="submit" title="right-scroll" class="right-scroll">
                         <img src="assets/next.svg" alt="next">
@@ -170,7 +171,7 @@
                 </div>
             </div>
         </div>
-        <div class="reason-block">
+         <div class="reason-block">
             <h2 class="reason-heading">More reasons to join</h2>
             <div class="reason-lists">
                 <div class="reason-card">
@@ -197,7 +198,7 @@
         </div>
         <div class="question-block">
             <h2 class="question-block-heading">Frequently Asked Questions</h2>
-            <details class="frequently-asked-question heading-gap">
+            <details class="frequently-asked-question">
                 <summary>What is Netflix?</summary>
                 <p>
                     Netflix is a streaming service that offers a wide variety of award-winning TV shows, 
@@ -240,40 +241,47 @@
                 <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
             </details>
         </div>
-        <footer>
-            <div class="membership-form">
-                <p class="membership-form-para">Ready to watch? Enter your email to create or restart your membership.</p>
-                <form>
-                    <div class="email1 make-inline">
-                        <input type="email" name="email" id="email1" placeholder="Enter your email" class="gap">
-                    </div>
-                    <div class="submit1 make-inline">
-                        <!-- Submit Button Added -->
-                        <input type="submit" value="Get Started >" id="get-started1" class="scale-button gap">
-                    </div>
-                </form>
-            </div>
-            <p class="grid-row-span">Questions? Call <a href="#">000-800-919-1743</a></p>
-            <div class="grid">
-                
-                <p><a href="#">FAQ</a></p>
-                <p><a href="#">Help Centre</a></p>
-                <p><a href="#">Account</a></p>
-                <p><a href="#">Media Centre</a></p>
-                <p><a href="#">Investor Relations</a></p>
-                <p><a href="#">Jobs</a></p>
-                <p><a href="#">Ways to Watch</a></p>
-                <p><a href="#">Terms of Use</a></p>
-                <p><a href="#">Privacy</a></p>
-                <p><a href="#">Cookie Preferences</a></p>
-                <p><a href="#">Corporate Information</a></p>
-                <p><a href="#">Contact Us</a></p>
-                <p><a href="#">Speed Test</a></p>
-                <p><a href="#">Legal Notices</a></p>
-                <p><a href="#">Only on Netflix</a></p>
-            </div>
-        </footer>
-    </main>
+        <div class="membership-form">
+            <p class="membership-form-para">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form>
+                <div class="inline email">
+                    <input type="email" name="email" id="email1" placeholder="Email address">
+                </div>
+                <div class="inline">
+                    <input type="submit" value="Get Started" id="get-started1" class="scale-button">
+                </div>
+            </form>
+        </div>
+        <div class="grid">         
+            <p class="grid-col-span">Questions? Call <a href="#">000-800-919-1743</a></p>
+            <p><a href="#">FAQ</a></p>
+            <p><a href="#">Help Centre</a></p>
+            <p><a href="#">Account</a></p>
+            <p><a href="#">Media Centre</a></p>
+            <p><a href="#">Investor Relations</a></p>
+            <p><a href="#">Jobs</a></p>
+            <p><a href="#">Ways to Watch</a></p>
+            <p><a href="#">Terms of Use</a></p>
+            <p><a href="#">Privacy</a></p>
+            <p><a href="#">Cookie Preferences</a></p>
+            <p><a href="#">Corporate Information</a></p>
+            <p><a href="#">Contact Us</a></p>
+            <p><a href="#">Speed Test</a></p>
+            <p><a href="#">Legal Notices</a></p>
+            <p><a href="#">Only on Netflix</a></p>
+        </div>
+        <div class="lang-change">
+            <form action="" method="post" id="lang-change">
+                <label for="language1"><img src="assets/lang.svg" alt="language"></label>
+                <select name="language" id="language1">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <p class="region">Netflix India</p>
+        </div>
+    </footer>
 </body>
-
 </html>
